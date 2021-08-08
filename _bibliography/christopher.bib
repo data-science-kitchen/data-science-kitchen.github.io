@@ -1,14 +1,25 @@
 ---
 ---
 
+@INPROCEEDINGS{Schymura2021,
+	abbr		= {INTERSPEECH},
+	author	= {Christopher Schymura and Benedikt Bönninghoff and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Dorothea Kolossa},
+	booktitle	= {Annual Conference of the International Speech Communication Association (INTERSPEECH)},
+	title	= {PILOT: Introducing Transformers for Probabilistic Sound Event Localization},
+	year		= {2021},
+	arxiv	= {2106.03903},
+	abstract	= {Sound event localization aims at estimating the positions of sound sources in the environment with respect to an acoustic receiver (e.g. a microphone array). Recent advances in this domain most prominently focused on utilizing deep recurrent neural networks. Inspired by the success of transformer architectures as a suitable alternative to classical recurrent neural networks, this paper introduces a novel transformer-based sound event localization framework, where temporal dependencies in the received multi-channel audio signals are captured via self-attention mechanisms. Additionally, the estimated sound event positions are represented as multivariate Gaussian variables, yielding an additional notion of uncertainty, which many previously proposed deep learning-based systems designed for this application do not provide. The framework is evaluated on three publicly available multi-source sound event localization datasets and compared against state-of-the-art methods in terms of localization error and event detection accuracy. It outperforms all competing systems on all datasets with statistical significant differences in performance.}
+}
+
 @INPROCEEDINGS{Wissing2021,
 	abbr		= {ICASSP},
 	author	= {Julio Wissing and Benedikt Bönninghoff and Dorothea Kolossa and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Christopher Schymura},
 	booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-	title	= {Data Fusion for Audiovisual Speaker Localization: {E}xtending Dynamic Stream Weights to the Spatial Domain},
+	title	= {Data Fusion for Audiovisual Speaker Localization: Extending Dynamic Stream Weights to the Spatial Domain},
 	year		= {2021},
 	arxiv	= {2102.11588},
 	code	= {https://github.com/rub-ksv/spatial-stream-weights},
+    pdf		= {https://ieeexplore.ieee.org/document/9413399},
 	abstract	= {Estimating the positions of multiple speakers can be helpful for tasks like automatic speech recognition or speaker diarization. Both applications benefit from a known speaker position when, for instance, applying beamforming or assigning unique speaker identities. Recently, several approaches utilizing acoustic signals augmented with visual data have been proposed for this task. However, both the acoustic and the visual modality may be corrupted in specific spatial regions, for instance due to poor lighting conditions or to the presence of background noise. This paper proposes a novel audiovisual data fusion framework for speaker localization by assigning individual dynamic stream weights to specific regions in the localization space. This fusion is achieved via a neural network, which combines the predictions of individual audio and video trackers based on their time- and location-dependent reliability. A performance evaluation using audiovisual recordings yields promising results, with the proposed fusion approach outperforming all baseline models.}
 }
 
@@ -92,7 +103,7 @@
   abbr		= {EUSIPCO},
   author	= {Nobutaka Ito and Christopher Schymura and Shoko Araki and Tomohiro Nakatani},
   booktitle	= {European Signal Processing Conference (EUSIPCO)},
-  title	= {Noisy {cGMM}: {C}omplex {G}aussian Mixture Model with Non-Sparse Noise Model for Joint Source Separation and Denoising},
+  title	= {Noisy cGMM: Complex Gaussian Mixture Model with Non-Sparse Noise Model for Joint Source Separation and Denoising},
   year		= {2018},
   pages	= {1662-1666},
   doi		= {10.23919/EUSIPCO.2018.8553410},

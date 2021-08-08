@@ -11,8 +11,8 @@ research_gate_profile:
 orcid_id:
 img: dummy-profile.png
 importance: 1
-bibliography_file:
-bibliography_years:
+bibliography_file: dennis.bib
+bibliography_years: [2021]
 ---
 
 Blubb

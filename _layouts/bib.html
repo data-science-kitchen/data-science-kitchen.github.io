@@ -12,7 +12,7 @@
   {% endif %}
   </div>-->
 
-  <div id="{{entry.key}}" class="col-sm-10">
+  <div id="{{entry.key}}" class="col-sm-12">
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
@@ -71,7 +71,7 @@
       {% if entry.type == "article" %}
         <em>{{entry.journal}}</em>
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+        <em>{{entry.booktitle}}</em>
       {% endif %}
       <!--{% if entry.year %}
         , {{entry.year}}

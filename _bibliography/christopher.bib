@@ -90,6 +90,7 @@
   journal	= {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
   volume	= {28},
   pages	= {1065-1078},
+  arxiv			= {1903.06031},
   year      	= {2020},
   pdf       	= {https://ieeexplore.ieee.org/document/9037104},
   doi		= {10.1109/TASLP.2020.2980974},
@@ -104,6 +105,7 @@
   year		= {2020},
   volume	= {28},
   pages	= {487-502},
+  arxiv		= {1904.00055},
   doi		= {10.1109/TASLP.2019.2958408},
   pdf       	= {https://ieeexplore.ieee.org/document/8928942},
   abstract	= {Identification and localization of sounds are both integral parts of computational auditory scene analysis. Although each can be solved separately, the goal of forming coherent auditory objects and achieving a comprehensive spatial scene understanding suggests pursuing a joint solution of the two problems. This article presents an approach that robustly binds localization with the detection of sound events in a binaural robotic system. Both tasks are joined through the use of spatial stream segregation which produces probabilistic time-frequency masks for individual sources attributable to separate locations, enabling segregated sound event detection operating on these streams. We use simulations of a comprehensive suite of test scenes with multiple co-occurring sound sources, and propose performance measures for systematic investigation of the impact of scene complexity on this segregated detection of sound types. Analyzing the effect of spatial scene arrangement, we show how a robot could facilitate high performance through optimal head rotation. Furthermore, we investigate the performance of segregated detection given possible localization error as well as error in the estimation of number of active sources. Our analysis demonstrates that the proposed approach is an effective method to obtain joint sound event location and type information under a wide range of conditions.}
@@ -185,7 +187,7 @@
 
 @INPROCEEDINGS{Schymura2017,
   abbr		= {ICASSP},
-  author	= {Christopher Schymura and Juan Diego {Rios Grajales} and Dorothea Kolossa},
+  author	= {Christopher Schymura and Juan Diego Rios Grajales and Dorothea Kolossa},
   booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   title	= {Monte Carlo Exploration for Active Binaural Localization},
   year		= {2017},
@@ -193,6 +195,15 @@
   doi		= {10.1109/ICASSP.2017.7952204},
   pdf		= {https://ieeexplore.ieee.org/document/7952204},
   abstract	= {This study introduces a machine hearing system for robot audition, which enables a robotic agent to pro-actively minimize the uncertainty of sound source location estimates through motion. The proposed system is based on an active exploration approach, providing a means to model and predict effects of the agent's future motions on localization uncertainty in a probabilistic manner. Particle filtering is used to estimate the posterior probability density function of the source position from binaural measurements, enabling to jointly assess azimuth and distance of the source. The framework allows to infer and refine a policy to select appropriate actions via a Monte Carlo exploration approach. Experiments in simulated reverberant conditions are conducted, showing that active exploration and the incorporation of distance estimation significantly improve localization performance.}
+}
+
+@INPROCEEDINGS{Schymura2016,
+	author 			= {Christopher Schymura and Juan Diego Rios Grajales and Dorothea Kolossa},
+	booktitle 		= {Deutsche Jahrestagung für Akustik (DAGA)},
+	title 			= {Active Localization of Sound Sources with Binaural Models},
+	month 			= {March},
+	year 			= {2016},
+	abstract		= {During past decades, a variety of different models for sound source localization has been developed in the context of binaural hearing. This paper introduces extensions to recently developed models, which consider localization as an active process, inspired by the ability of humans to conduct head movements. A machine hearing system is presented that utilizes different head motion strategies via a closed-loop feedback control scheme to localize sources at any angular position in the horizontal plane. The proposed framework is based on representing the localization problem as a dynamical system, where the source position is inferred from interaural time- and level-difference measurements by recursive Bayesian estimation techniques. This approach enables the system to be used for online processing on a frame-by-frame basis and to adapt accordingly to changes in a dynamic acoustic scene. A systematic evaluation of different head movement strategies shows that closed-loop feedback is able to substantially increase localization performance in different acoustic conditions.}
 }
 
 @INPROCEEDINGS{Schymura2015,
@@ -206,3 +217,11 @@
   abstract	= {This paper introduces a binaural model for the localisation and tracking of a moving sound source’s azimuth in the horizontal plane. The model uses a nonlinear state space representation of the sound source dynamics including the current position of the listener’s head. The state is estimated via an unscented Kalman Filter by comparing the interaural level and time differences of the binaural signal with semi-analytically derived localisation cues from a spherical head model. The localisation performance of the model is evaluated in combination with two different head movement approaches based on open-and closed-loop control strategies. The results show that adaptive strategies outperform non-adaptive ones and are able to compensate systematic deviations between the spherical head model and human heads.}
 }
 
+@INPROCEEDINGS{Schymura2014,
+	author 			= {Christopher Schymura and Ning Ma and Guy J. Brown and Thomas Walther and Dorothea Kolossa},
+	booktitle 		= {Forum Acusticum},
+	title 			= {Binaural Sound Source Localisation using a Bayesian-network-based Blackboard System and Hypothesis-driven Feedback},
+	month 			= {September},
+	year 			= {2014},
+	abstract		= {An essential aspect of Auditory Scene Analysis is the localisation of sound sources in relation to the position of the listener in the surrounding environment. The human auditory system is capable of precisely locating and separating different sound sources, even in noisy and reverberant environments, whereas mimicking this ability by computational means is still a challenging task. In this work, we investigate a Bayesian-network-based approach in the context of binaural sound source localisation. We extend existing solutions towards a Bayesian network based blackboard system that includes expert knowledge inspired by insights into the human auditory system. In order to improve estimation of source positions and reduce uncertainty caused by front-back ambiguities, hypothesis-driven feedback is used. This is accomplished by triggering head movements based on inference results provided by the Bayesian network. We evaluate the performance of our approach in comparison to existing solutions in a sound-source localisation task within a virtual acoustic environment.}
+}

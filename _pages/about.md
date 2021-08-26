@@ -19,7 +19,7 @@ news: true  # includes a list of news items
 </div>
 
 <div class="col text-justify p-0">
-We are a bunch of data science and machine learning enthusiasts, doing open source AI research for fun in our free time. Founded in November 2020, our objective is to publish interesting machine learning research, learn from each other and continuously develop our data science skillset. We particularly enjoy participating in machine learning challenges and competitions. Our research interests primarily focus on natural language processing and explainable machine learning, but we do not limit ourselves to these subject areas and are generally open to ideas from a broad range of application domains.
+We are a group of data science and machine learning enthusiasts, doing open source research for fun in our free time. Founded in November 2020, our objective is to publish interesting machine learning research, learn from each other and continuously develop our data science skillset. We particularly enjoy participating in machine learning challenges and competitions. Our research interests primarily focus on natural language processing and explainable machine learning, but we do not limit ourselves to these subject areas and are generally open to ideas from a broad range of application domains.
 <br/><br/>
 </div>
 

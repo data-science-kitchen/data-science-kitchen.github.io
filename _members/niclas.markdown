@@ -9,7 +9,7 @@ github_username: Pretzel-Solution
 scholar_userid:
 research_gate_profile:
 orcid_id:
-img: niclas-hildebrandt.png
+img: niclas-cropped.png
 importance: 1
 bibliography_file: niclas.bib
 bibliography_years: [2021]

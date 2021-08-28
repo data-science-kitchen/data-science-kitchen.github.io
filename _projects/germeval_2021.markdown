@@ -29,6 +29,49 @@ img: /assets/img/germeval-2021-thumbnail.png
 
 <!--
 
+**ABSTRACT:**
+This article outlines our contribution to the [GermEval 2021](https://germeval2021toxic.github.io/SharedTask/) shared task on the identification of toxic, engaging, and fact-claiming comments. Our proposed framework focuses on a feature-engineering approach with a conventional classification backend. We combine semantic and writing style embeddings derived from pre-trained deep neural networks with additional numerical features, specifically designed for the shared task. Ensembles of Logistic Regression classifiers and Support Vector Machines are used to derive predictions for each subtask via a majority voting scheme. Our best submission achieved macro-averaged F1-scores of 66.8%, 69.9% and 72.5% for the identification of toxic, engaging, and fact-claiming comments.
+
+## Task and data description
+
+Each subtask of GermEval 2021 is defined as a binary classification problem and all tasks share the same training and test data. The set of training data consists of 3,244 Facebook comments from a German news broadcast page. The anonymized comments were posted in the time span from February to July 2019 and were labeled by trained annotators. Binary labels were provided for each of the three categories. The test data is also extracted from Facebook discussions and include 944 comments. However, these comments had a different discussion topic than the training data. Precision, recall, and macro-averaged F1-score were defined as the relevant evaluation metrics.
+
+### Subtask 1: Toxic comment classification
+
+Toxic comments are characterized by their offensive and hateful language, intended to blame other people or groups. For social media and content providers, it is important to detect such comments in a highly automated and scalable way. An example of a toxic comment from the training data of the GermEval shared task is: 
+
+> Na, welchem tech riesen hat er seine Eier verkauft..?
+
+However, some of the comments which have been labeled as toxic can be quite hard to detect. Examples of such cases are: 
+
+> @USER eididei sieh mal an
+
+or
+
+> ein schöner VW Golf Diesel..
+
+Difficulties occur due to irony, subtle overtones and missing contextual information.
+
+### Subtask 2: Engaging comment classification
+
+Engaging comments encourage other users to join the discussion, express their opinions and share ideas regarding the topic. They are characterised by being rational, respectful, and reciprocal and hence can foster a constructive and fruitful discussion. The comment 
+
+> Wie wär’s mit einer Kostenteilung. Schließlich haben beide Parteien (Verkäufer und Käufer) etwas von der Tätigkeit des Maklers. Gilt gleichermassen für Vermietungen. Die Kosten werden so oder soweit verrechnet, eine Kostenreduktion ist somit nicht zu erwarten.
+
+is an example of an engaging comment from the training data.
+
+### Subtask 3: Fact-claiming comment classification
+
+If a platform provider has to prevent the spread of fake news and misinformation, there is the demand of automatically identifying fact-claiming comments to assess their truthfulness. An example of a fact-claiming comment from the training data is the comment 
+
+> Dummerweise haben wir in der EU und in der USA einen viel höheren CO2 Fußabdruck als z.B. die Afrikaner oder Inder.
+
+## Our proposed system
+
+The general system architecture is shown in Fig.~\ref{fig:architecture}. As the number of samples in the training dataset provided for GermEval 2021 is rather small, our proposed framework focuses on suitable feature engineering with a conventional classification backend. These features and further implementation details of our system are described in the following.
+
+
+
 **NOTE:**
 Citations, footnotes, and code blocks do not display correctly in the dark mode since distill does not support the dark mode by default.
 If you are interested in correctly adding dark mode support for distill, please open [a discussion](https://github.com/alshedivat/al-folio/discussions) and let us know.

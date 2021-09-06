@@ -12,7 +12,7 @@ orcid_id:
 img: dummy-profile.png
 importance: 1
 bibliography_file: benedikt.bib
-bibliography_years: [2021]
+bibliography_years: [2021, 2016]
 ---
 
 Blubb

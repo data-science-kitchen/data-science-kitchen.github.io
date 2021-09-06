@@ -31,7 +31,7 @@ We are a group of data science and machine learning enthusiasts, doing open sour
       {% assign news = site.news | reverse %}
       {% for item in news limit: site.news_limit %}
         <tr>
-          <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+          <th scope="row" style="width: 100px;">{{ item.date | date: "%b %-d, %Y" }}</th>
           <td>
             {% if item.inline %}
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -48,21 +48,3 @@ We are a group of data science and machine learning enthusiasts, doing open sour
   {% endif %}
 </div>
 
-<!--
-<div class="news mt-3 p-0">
-  <h1 class="title mb-4 p-0">news</h1>
-  {% assign news = site.news | reverse %}
-  {% for item in news limit: site.news_limit %}
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge info-color-dark font-weight-bold text-uppercase align-middle date ml-3">
-          {{ item.date | date: "%b %-d, %Y" }}
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p>{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</p>
-      </div>
-    </div>
-  {% endfor %}
-</div>
--->

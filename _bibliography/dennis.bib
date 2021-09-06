@@ -9,7 +9,7 @@
 	title	= {Data Science Kitchen at GermEval 2021: A Fine Selection of Hand-Picked Features, Delivered Fresh from the Oven},
 	year		= {2021},
 	abstract	= {This paper presents the contribution of the Data Science Kitchen at GermEval 2021 shared task on the identification of toxic, engaging, and fact-claiming comments. The task aims at extending the identification of offensive language, by including additional subtasks that identify comments which should be prioritized for fact-checking by moderators and community managers. Our contribution focuses on a feature-engineering approach with a conventional classification backend. We combine semantic and writing style embeddings derived from pre-trained deep neural networks with additional numerical features, specifically designed for this task. Ensembles of Logistic Regression classifiers and Support Vector Machines are used to derive predictions for each subtask via a majority voting scheme. Our best submission achieved macro-averaged F1-scores of 66.8%, 69.9% and 72.5% for the identification of toxic, engaging, and fact-claiming comments.},
-	note 		= {to appear}
+	pdf		= {https://netlibrary.aau.at/obvukloa/content/pageview/6435304}
 }
 
 @inproceedings{Orth2017b,
@@ -20,7 +20,9 @@ keywords = {ADAS,Critical gap,Gap acceptance,Personalization,Speech-based},
 pages = {193--201},
 publisher = {ACM Press},
 title = {Benefits of Personalization in the Context of a Speech-Based Left-Turn Assistant},
-year = {2017}
+year = {2017},
+pdf = {https://www.honda-ri.de/pubs/pdf/3499.pdf},
+abstract = {We have previously introduced a novel Assistance On Demand (AOD) concept in the context of an urban speech-based left-turn assistant which supports the driver in monitoring and decision making by providing recommendations for suitable time gaps to enter the intersection. In a first user study participants showed a clear preference for the AOD system, yet also frequently mentioned that the recommended gaps did not fit their driving behavior. In the user study we present here, we investigate in how far the acceptance and efficiency of the AOD system can be increased by a personalization of the recommended gaps to the individual driver. For this purpose, we estimate individual drivers’ gap acceptance from observations of their manual driving and use it to evaluate a default and a personalized variant of the AOD system. Results reveal a clear preference for the personalized assistant compared to the default one and to driving manually.}
 }
 
 @inproceedings{Orth2017a,
@@ -30,8 +32,10 @@ booktitle = {IEEE International Conference on Intelligent Transportation Systems
 doi = {10.1109/ITSC.2017.8317721},
 pages = {1121--1126},
 publisher = {IEEE},
-title = {Predicting driver left-turn behavior from few training samples using a maximum a posteriori method},
-year = {2017}
+title = {Predicting Driver Left-Turn Behavior from Few Training Samples using a Maximum A-Posteriori Method},
+year = {2017},
+pdf = {https://ieeexplore.ieee.org/document/8317721},
+abstract = {In this work, we introduce a novel maximum a posteriori (MAP) method, which can predict driver left-turn behavior from only a few training samples. For the prediction of the driver behavior in this scenario we utilize the so-called critical gap. It signifies how large a gap minimally has to be for the driver to accept it and take the turn. The latter is especially important for the personalization of an intersection assistant, which we are currently developing. In contrast to Troutbeck's critical gap estimation method, we define a likelihood over all observable accepted and rejected gaps, thus we provide a model that does not require the driver to behave consistently. Subsequently, we extend it to a MAP estimation by incorporating prior knowledge of the critical gap. Using this approach, we obtain a maximum prediction error of 13.8% if only one training sample is used, which is a relative improvement of 35.2% compared to Troutbeck's method.}
 }
 
 @inproceedings{Orth2017c,
@@ -41,14 +45,20 @@ booktitle = {IEEE Intelligent Vehicles Symposium (IV)},
 doi = {10.1109/IVS.2017.7995776},
 pages = {553--558},
 publisher = {IEEE},
-title = {A maximum likelihood method for driver-specific critical-gap estimation},
-year = {2017}
+title = {A Maximum Likelihood Method for Driver-Specific Critical-Gap Estimation},
+year = {2017},
+pdf = {https://ieeexplore.ieee.org/document/7995776},
+abstract = {In this work, we introduce a maximum likelihood (ML) method to estimate the smallest accepted gap of a specific driver, the so-called critical gap. Previous methods, like Troutbeck's or Raff's method, are well known and widely used but require a consistently behaving driver, which is usually not met. The methods will be investigated for the personalization of an intersection assistant, which we are currently developing. We start with the hypothesis that the size that constitutes an acceptable gap is driver-dependent. To test this hypothesis, we have performed a simulator study with 9 participants. The results reveal that there is a significant inter-individual difference in the critical gap between the drivers, as postulated. Next we investigate how well we can predict which gap the driver will take when we use the previously estimated personalized critical gap versus a driver independent one. Using the personalized gap compared to a driver independent one reduces the error from 11.8 % to 9 8 %. These results are a clear indication that personalization can be utilized to increase the effectiveness and usability of an intersection assistant.}
 }
 
-@misc{Heckmann2020,
+@inproceedings{Heckmann2020,
 author = {Heckmann, Martin and Orth, Dennis and Kolossa, Dorothea},
 title = {Method for Assisting a Driver of an Ego-Vehicle in Making Use of a Gap Between Vehicles, Corresponding Driver Assistance System and Vehicle Equipped with such Driving Assistance System},
-year = {2020}
+year = {2020},
+publisher={Google Patents},
+url = {https://www.freepatentsonline.com/y2020/0160077.html},
+booktitle = {United States Patent Application 20200160077},
+abstract = {A method for assisting a driver of an ego-vehicle in making use of a gap between vehicles to enter a traffic flow at an intersection is suggested, comprising the following method steps: First, other vehicles in the environment of the ego-vehicle are physically sensed using at least one environment sensor mounted on the ego-vehicle. Second, a gap size of at least one gap between two successive vehicles are calculated in a processor based on the sensor's/sensors' output. An ego-vehicle driver's gazing behavior using at least one driver sensor mounted on the ego-vehicle is observed and analyzed and an assistance signal is generated based on the result of the analysis and the determined size of the at least one gap. Finally, a recommendation or warning perceivable for the ego-vehicle's driver is output in accordance with the assistance signal.}
 }
 
 @article{Heckmann2017,
@@ -60,7 +70,9 @@ number = {5},
 pages = {36--41},
 title = {Development of a personalised intersection assistant},
 volume = {119},
-year = {2017}
+year = {2017},
+pdf = {https://ipg-automotive.com/fileadmin/user_upload/content/Download/PDF/Articles/1705_ATZworldwide_HondaResearchInstitute_Development_of_a_Personalised_Intersection_Assistant_EN.pdf},
+abstract = {Advanced driver assistance systems have great potential to significantly improve the safety and comfort of driving. Honda Research Institute Europe and Ruhr University Bochum show how personalisation could improve the acceptance and impact of driver assistance functions by using an intuitive and speech-based intersection assistant.}
 }
 
 @inproceedings{Heckmann2019,
@@ -72,7 +84,9 @@ isbn = {9781450369206},
 pages = {483--488},
 publisher = {ACM Press},
 title = {CORA, a prototype for a cooperative speech-based on-demand intersection assistant},
-year = {2019}
+year = {2019},
+pdf = {https://dl.acm.org/doi/10.1145/3349263.3349599},
+abstract = {We present the first speech-based advanced driver assistance prototype. It is based on our previously proposed on-demand communication concept for the interaction between the driver and his or her vehicle. Using this concept, drivers can flexibly activate the system via speech whenever they want to receive assistance. We could show via driver simulator studies that an instantiation of this concept as an intersection assistant, supporting the driver in turning left, was well received by drivers and preferred to an alternative, vision-based system. In this paper, we present a prototype implementation and give details on how we adapted it to the intricacy of urban traffic as well as to the shortcomings of current sensor technology in establishing an adequate environment perception. The accompanying video gives an impression of the interaction between the driver and the system when cooperatively turning left from a subordinate road into crossing traffic.}
 }
 
 @inproceedings{Orth,
@@ -83,7 +97,9 @@ doi = {10.1109/IVS.2018.8500402},
 isbn = {9781538644515},
 pages = {2048--2053},
 title = {A Speech-Based On-Demand Intersection Assistant Prototype},
-year = {2018}
+year = {2018},
+abstract = {We have recently proposed a speech-based on- demand intersection assistant which helps the driver to handle urban intersections by informing him of the traffic situation on the right hand side and recommending suitable gaps in traffic. In a previous user study, conducted in a simulator, we could show that the system is in general well accepted and preferred by drivers compared to driving without assistance or with only visual support. In this paper, we report on an implementation of this system and its evaluation in real urban traffic. We use LIDAR sensors for the perception of the traffic environment. A scene analyzer estimates the gaps between the vehicles in real time. The result of this analysis is provided to a dialog manager, which uses it to inform the driver of approaching vehicles and suitable gaps. While approaching the intersection, the driver can activate the system via a wake-up-word and control it with subsequent speech commands. The design of the data analyzer and dialog manager is based on evaluations at real intersections. The resulting system can provide suitable support to the driver in a wide range of traffic situations.},
+pdf = {https://ieeexplore.ieee.org/document/8500402}
 }
 
 @inproceedings{Orth2018,
@@ -95,7 +111,9 @@ isbn = {978-1-7281-0321-1},
 pages = {1273--1278},
 publisher = {IEEE},
 title = {Analysis of a Speech-Based Intersection Assistant in Real Urban Traffic},
-year = {2018}
+year = {2018},
+abstract = {Previously, we have presented a speech-based intersection assistant prototype. The system is activated on-demand by the driver and gives afterwards, via speech, information on suitable gaps between the traffic vehicles approaching from the right. It is comparable to a front seat passenger which helps in the maneuver decision for an intended turn left. This system has assumed a more or less constant flow of the traffic. To also handle situations of more dynamic urban traffic, including vehicles that may be slowing down or stopping, we have now extended our previous approach by a dynamic vehicle model. This model predicts the future traffic vehicle state based on second-order vehicle dynamics. We perform an in depth analysis of our system on a set of recordings under various traffic conditions. In this analysis we compare in particular the previous and the novel vehicle model. Both approaches lead to a correct recommendation in approximately 90% of the cases. Unexpectedly, the dynamic model does not lead to significant improvements in the system behavior, despite its increased accuracy.},
+pdf = {https://ieeexplore.ieee.org/document/8569821}
 }
 
 @inproceedings{Acl2018,
@@ -105,6 +123,8 @@ booktitle = {Speech Communication; 13th ITG-Symposium},
 isbn = {9783800747672},
 pages = {326--330},
 publisher = {VDE},
-title = {"Gap after the next two vehicles": A Spatio-temporally Situated Dialog for a Cooperative Driving Assistant},
-year = {2018}
+title = {"Gap After the Next Two Vehicles": A Spatio-temporally Situated Dialog for a Cooperative Driving Assistant},
+year = {2018},
+abstract = {We present a spatio-temporally situated dialog that is implemented in a driver assistance system. The system supports the driver in turning left at a busy urban intersection by providing verbal information on the vehicles arriving from the right. This is a highly dynamic scenario, as the location of the vehicles significantly changes while the system is referring to them. Consequently, the time the system needs for producing the utterances and the time drivers need to comprehend them and prepare their action has to be taken into account in the dialog management. We introduce a dialog concept, which predicts the future traffic participants state and plans the utterances such that they align with the driver's expectations. We have implemented and evaluated this system in a prototype vehicle.},
+pdf = {https://ieeexplore.ieee.org/document/8578048}
 }

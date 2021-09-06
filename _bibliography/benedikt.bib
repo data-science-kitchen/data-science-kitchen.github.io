@@ -13,28 +13,27 @@
 }
 
 @InProceedings{boenninghoff:2021b,
-  author =              {Benedikt Boenninghoff and {Robert M.} Nickel and Dorothea Kolossa},
-  booktitle =           {{CLEF 2021 Labs and Workshops, Notebook Papers}},
+  author =              {Benedikt Boenninghoff and Robert M. Nickel and Dorothea Kolossa},
+  booktitle =           {CLEF 2021 Labs and Workshops, Notebook Papers},
   crossref =            {pan:2021},
   month =               sep,
   publisher =           {CEUR-WS.org},
-  title =               {{O2D2: Out-Of-Distribution Detector to CaptureUndecidable Trials in Authorship Verification---Notebook for PAN at CLEF 2021}},
-  year =                2021
+  title =               {O2D2: Out-Of-Distribution Detector to Capture Undecidable Trials in Authorship Verification (1st place at PAN@CLEF 2021 Authorship Identification Challenge)},
+  year =                2021,
+  pdf       	= {https://arxiv.org/pdf/2106.15825.pdf},
+  abstract= "The PAN 2021 authorship verification (AV) challenge is part of a three-year strategy, moving from a cross-topic/closed-set AV task to a cross-topic/open-set AV task over a collection of fanfiction texts. In this work, we present a novel hybrid neural-probabilistic framework that is designed to tackle the challenges of the 2021 task. Our system is based on our 2020 winning submission, with updates to significantly reduce sensitivities to topical variations and to further improve the system's calibration by means of an uncertainty-adaptation layer. Our framework additionally includes an out-of-distribution detector (O2D2) for defining non-responses. Our proposed system outperformed all other systems that participated in the PAN 2021 AV task."
 }
 
 @InProceedings{boenninghoff:2021a,
-author = {Benedikt Boenninghoff
-            and Dorothea Kolossa 
-            and {Robert M. Nickel}},
+author = {Benedikt Boenninghoff and Dorothea Kolossa and Robert M. Nickel},
 booktitle = {12th International Conference of the CLEF Association (CLEF 2021)},
-opteditor = {K. Selcuk Candan and Bogdan Ionescu and Lorraine Goeuriot and Birger Larsen and Henning Müller and Alexis Joly and Maria Maistro and Florina Piroi and Guglielmo Faggioli and Nicola Ferro},
 month = {},
 publisher = {Springer},
-title = {{Self-Calibrating Neural-Probabilistic Model for Authorship Verification Under Covariate Shift}},
+title = {Self-Calibrating Neural-Probabilistic Model for Authorship Verification Under Covariate Shift},
 url = {},
-venue = {{Bucharest, Romania}},
-videourl = {},
-year = 2021
+abstract= {We are addressing two fundamental problems in authorship verification (AV): Topic variability and miscalibration. Variations in the topic of two disputed texts are a major cause of error for most AV systems. In addition, it is observed that the underlying probability estimates produced by deep learning AV mechanisms oftentimes do not match the actual case counts in the respective training data. As such, probability estimates are poorly calibrated. We are expanding our framework from PAN 2020 to include Bayes factor scoring (BFS) and an uncertainty adaptation layer (UAL) to address both problems. Experiments with the 2020/21 PAN AV shared task data show that the proposed method significantly reduces sensitivities to topical variations and significantly improves the system's calibration.},
+year = 2021,
+pdf= {https://arxiv.org/pdf/2106.11196.pdf},
 }
 
 @INPROCEEDINGS{Schymura2021,
@@ -47,23 +46,22 @@ year = 2021
 	abstract	= {Sound event localization aims at estimating the positions of sound sources in the environment with respect to an acoustic receiver (e.g. a microphone array). Recent advances in this domain most prominently focused on utilizing deep recurrent neural networks. Inspired by the success of transformer architectures as a suitable alternative to classical recurrent neural networks, this paper introduces a novel transformer-based sound event localization framework, where temporal dependencies in the received multi-channel audio signals are captured via self-attention mechanisms. Additionally, the estimated sound event positions are represented as multivariate Gaussian variables, yielding an additional notion of uncertainty, which many previously proposed deep learning-based systems designed for this application do not provide. The framework is evaluated on three publicly available multi-source sound event localization datasets and compared against state-of-the-art methods in terms of localization error and event detection accuracy. It outperforms all competing systems on all datasets with statistical significant differences in performance.}
 }
 
-@INPROCEEDINGS{9413399,
-  author={Wissing, Julio and Boenninghoff, Benedikt and Kolossa, Dorothea and Ochiai, Tsubasa and Delcroix, Marc and Kinoshita, Keisuke and Nakatani, Tomohiro and Araki, Shoko and Schymura, Christopher},
-  booktitle={ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-  title={Data Fusion for Audiovisual Speaker Localization: Extending Dynamic Stream Weights to the Spatial Domain}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={4705-4709},
-  doi={10.1109/ICASSP39728.2021.9413399}}
+@INPROCEEDINGS{Wissing2021,
+	abbr		= {ICASSP},
+	author	= {Julio Wissing and Benedikt Bönninghoff and Dorothea Kolossa and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Christopher Schymura},
+	booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+	title	= {Data Fusion for Audiovisual Speaker Localization: Extending Dynamic Stream Weights to the Spatial Domain},
+	year		= {2021},
+	arxiv	= {2102.11588},
+	code	= {https://github.com/rub-ksv/spatial-stream-weights},
+    pdf		= {https://ieeexplore.ieee.org/document/9413399},
+	abstract	= {Estimating the positions of multiple speakers can be helpful for tasks like automatic speech recognition or speaker diarization. Both applications benefit from a known speaker position when, for instance, applying beamforming or assigning unique speaker identities. Recently, several approaches utilizing acoustic signals augmented with visual data have been proposed for this task. However, both the acoustic and the visual modality may be corrupted in specific spatial regions, for instance due to poor lighting conditions or to the presence of background noise. This paper proposes a novel audiovisual data fusion framework for speaker localization by assigning individual dynamic stream weights to specific regions in the localization space. This fusion is achieved via a neural network, which combines the predictions of individual audio and video trackers based on their time- and location-dependent reliability. A performance evaluation using audiovisual recordings yields promising results, with the proposed fusion approach outperforming all baseline models.}
+}
 
 @inproceedings{boenninghoff-etal-2020-variational,
     title = "Variational Autoencoder with Embedded Student-t Mixture Model for Authorship Attribution",
-    author = "Boenninghoff, Benedikt  and
-      Zeiler, Steffen  and
-      Nickel, Robert  and
-      Kolossa, Dorothea",
-    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    author = "Boenninghoff, Benedikt  and Zeiler, Steffen  and Nickel, Robert  and Kolossa, Dorothea",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics (COLING)",
     month = dec,
     year = "2020",
     address = "Barcelona, Spain (Online)",
@@ -71,18 +69,21 @@ year = 2021
     url = "https://www.aclweb.org/anthology/2020.coling-main.45",
     pages = "519--529",
     abstract = "Traditional computational authorship attribution describes a classification task in a closed-set scenario. Given a finite set of candidate authors and corresponding labeled texts, the objective is to determine which of the authors has written another set of anonymous or disputed texts. In this work, we propose a probabilistic autoencoding framework to deal with this supervised classification task. Variational autoencoders (VAEs) have had tremendous success in learning latent representations. However, existing VAEs are currently still bound by limitations imposed by the assumed Gaussianity of the underlying probability distributions in the latent space. In this work, we are extending a VAE with an embedded Gaussian mixture model to a Student-t mixture model, which allows for an independent control of the {``}heaviness{''} of the respective tails of the implied probability densities. Experiments over an Amazon review dataset indicate superior performance of the proposed method.",
+    pdf={https://arxiv.org/pdf/2005.13930.pdf}
 }
 
 @InProceedings{boenninghoff:2020,
-  author =              {Benedikt Boenninghoff and Julian Rupp and {Robert M.} Nickel and Dorothea Kolossa},
-  booktitle =           {{CLEF 2020 Labs and Workshops, Notebook Papers}},
+  author =              {Benedikt Boenninghoff and Julian Rupp and Robert M. Nickel and Dorothea Kolossa},
+  booktitle =           {CLEF 2020 Labs and Workshops, Notebook Papers},
   crossref =            {pan:2020},
   editor =              {Linda Cappellato and Carsten Eickhoff and Nicola Ferro and Aur{\'e}lie N{\'e}v{\'e}ol},
   month =               sep,
   publisher =           {CEUR-WS.org},
-  title =               {{Deep Bayes Factor Scoring for Authorship Verification---Notebook for PAN at CLEF 2020}},
+  title =               {Deep Bayes Factor Scoring for Authorship Verification (1st place at PAN@CLEF 2020 Authorship Identification Challenge)},
   url =                 {http://ceur-ws.org/Vol-2696/},
-  year =                2020
+  year =                2020,
+  pdf = {https://arxiv.org/pdf/2008.10105.pdf},
+  abstract = "The PAN 2020 authorship verification (AV) challenge focuses on a cross-topic/closed-set AV task over a collection of fanfiction texts. Fanfiction is a fan-written extension of a storyline in which a so-called fandom topic describes the principal subject of the document. The data provided in the PAN 2020 AV task is quite challenging because authors of texts across multiple/different fandom topics are included. In this work, we present a hierarchical fusion of two well-known approaches into a single end-to-end learning procedure: A deep metric learning framework at the bottom aims to learn a pseudo-metric that maps a document of variable length onto a fixed-sized feature vector. At the top, we incorporate a probabilistic layer to perform Bayes factor scoring in the learned metric space. We also provide text preprocessing strategies to deal with the cross-topic issue."
 }
 
 @INPROCEEDINGS{9005650,
@@ -93,8 +94,9 @@ year = 2021
   volume={43},
   number={},
   pages={691–699},
-  doi={10.1007/s11623-019-1191-6}
+  doi={10.1007/s11623-019-1191-6},
   abstract={Der Austausch von Informationen findet zunehmend über soziale Medien und Online-Nachrichtendienstestatt. Daraus kann ein hohes Schadenspotential erwachsen, wenn es gelingt, für kriminelle Absichteneine andere Identität vorzutäuschen oder im Schutze der Anonymität Fake News bzw. Hate Speechzu verbreiten. Zum Schutz vor solchen Angriffen untersucht die Forensische Linguistik Textsammlungen hinsichtlichder Urheberschaft und möglicher biographischer Aussagen. Doch der Umfang der über das Internetveröffentlichten Daten verlangt automatisierte Verfahren, die die Analyse unterstützen.},
+  pdf = {https://link.springer.com/article/10.1007/s11623-019-1191-6}
   }
 
 @INPROCEEDINGS{9005650,
@@ -105,7 +107,9 @@ year = 2021
   volume={},
   number={},
   pages={36-45},
-  doi={10.1109/BigData47090.2019.9005650}
+  doi={10.1109/BigData47090.2019.9005650},
+  abstract = "Authorship verification is the task of analyzing the linguistic patterns of two or more texts to determine whether they were written by the same author or not. The analysis is traditionally performed by experts who consider linguistic features, which include spelling mistakes, grammatical inconsistencies, and stylistics for example. Machine learning algorithms, on the other hand, can be trained to accomplish the same, but have traditionally relied on so-called stylometric features. The disadvantage of such features is that their reliability is greatly diminished for short and topically varied social media texts. In this interdisciplinary work, we propose a substantial extension of a recently published hierarchical Siamese neural network approach, with which it is feasible to learn neural features and to visualize the decision-making process. For this purpose, a new large-scale corpus of short Amazon reviews for text comparison research is compiled and we show that the Siamese network topologies outperform state-of-the-art approaches that were built up on stylometric features. Our linguistic analysis of the internal attention weights of the network shows that the proposed method is indeed able to latch on to some traditional linguistic categories. ",
+  pdf = {https://arxiv.org/pdf/1910.08144.pdf},
   }
 
 
@@ -117,16 +121,20 @@ year = 2021
   volume={},
   number={},
   pages={2457-2461},
-  doi={10.1109/ICASSP.2019.8683405}
+  doi={10.1109/ICASSP.2019.8683405},
+  abstract = "Authorship verification tries to answer the question if two documents with unknown authors were written by the same author or not. A range of successful technical approaches has been proposed for this task, many of which are based on traditional linguistic features such as n-grams. These algorithms achieve good results for certain types of written documents like books and novels. Forensic authorship verification for social media, however, is a much more challenging task since messages tend to be relatively short, with a large variety of different genres and topics. At this point, traditional methods based on features like n-grams have had limited success. In this work, we propose a new neural network topology for similarity learning that significantly improves the performance on the author verification task with such challenging data sets. ",
+  pdf= {https://arxiv.org/pdf/1908.07844.pdf},
   }
 
 @inproceedings{glarner17_interspeech,
   author={Thomas Glarner and Benedikt Boenninghoff and Oliver Walter and Reinhold Haeb-Umbach},
-  title={{Leveraging Text Data for Word Segmentation for Underresourced Languages}},
+  title={Leveraging Text Data for Word Segmentation for Underresourced Languages},
   year=2017,
   booktitle={Proc. Interspeech 2017},
   pages={2143--2147},
-  doi={10.21437/Interspeech.2017-1262}
+  doi={10.21437/Interspeech.2017-1262},
+  pdf = {https://www.isca-speech.org/archive/pdfs/interspeech_2017/glarner17_interspeech.pdf},
+  abstract = {In this contribution we show how to exploit text data to support word discovery from audio input in an underresourced target language. Given audio, of which a certain amount is transcribed at the word level, and additional unrelated text data, the approach is able to learn a probabilistic mapping from acoustic units to characters and utilize it to segment the audio data into words without the need of a pronunciation dictionary. This is achieved by three components: an unsupervised acoustic unit discovery system, a supervisedly trained acoustic unit-to-grapheme converter, and a word discovery system, which is initialized with a language model trained on the text data. Experiments for multiple setups show that the initialization of the language model with text data improves the word segmentation performance by a large margin.}
   }
   
 @INPROCEEDINGS{7776144,
@@ -137,7 +145,9 @@ year = 2021
   volume={},
   number={},
   pages={1-5},
-  doi={}
+  doi={},
+  abstract = {The detection of voiced speech, the estimation of the fundamental frequency, and the tracking of pitch values over time are crucial subtasks for a variety of speech processing techniques. Many different algorithms have been developed for each of the three subtasks. We present a new algorithm that integrates the three subtasks into a single procedure. The algorithm can be applied to pre-recorded speech utterances in the presence of considerable amounts of background noise. We combine a collection of standard metrics, such as the zero-crossing rate, for example, to formulate an unsupervised voicing classifier. The estimation of pitch values is accomplished with a hybrid autocorrelation-based technique. We propose a forward-backward Kalman filter to smooth the estimated pitch contour. In experiments, we are able to show that the proposed method compares favorably with current, state-of-the-art pitch detection algorithms. },
+  pdf = {https://arxiv.org/pdf/2103.01173.pdf},
   }
 
 

@@ -9,10 +9,10 @@ github_username:
 scholar_userid:
 research_gate_profile:
 orcid_id:
-img: dummy-profile.png
+img: dennis.jpg
 importance: 1
 bibliography_file: dennis.bib
-bibliography_years: [2021]
+bibliography_years: [2021, 2020, 2019, 2018, 2017]
 ---
 
 Blubb

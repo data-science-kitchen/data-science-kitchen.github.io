@@ -2,7 +2,7 @@
 layout: distill
 title: GermEval 2021
 description: We participated in the GermEval 2021 shared task on the identification of toxic, engaging, and fact-claiming comments.
-date: 2021-08-26
+date: 2021-09-06
 
 authors:
   - name: Niclas Hildebrandt
@@ -22,15 +22,12 @@ authors:
     affiliations:
       name: Data Science Kitchen
 
-bibliography:
+bibliography: germeval2021.bib
 img: /assets/img/germeval-2021-thumbnail.png
 
 ---
 
-<!--
-
-**ABSTRACT:**
-This article outlines our contribution to the [GermEval 2021](https://germeval2021toxic.github.io/SharedTask/) shared task on the identification of toxic, engaging, and fact-claiming comments. Our proposed framework focuses on a feature-engineering approach with a conventional classification backend. We combine semantic and writing style embeddings derived from pre-trained deep neural networks with additional numerical features, specifically designed for the shared task. Ensembles of Logistic Regression classifiers and Support Vector Machines are used to derive predictions for each subtask via a majority voting scheme. Our best submission achieved macro-averaged F1-scores of 66.8%, 69.9% and 72.5% for the identification of toxic, engaging, and fact-claiming comments.
+This article outlines our contribution to the [GermEval 2021](https://germeval2021toxic.github.io/SharedTask/) shared task on the identification of toxic, engaging, and fact-claiming comments. Our proposed framework focuses on a feature-engineering approach with a conventional classification backend. We combine semantic and writing style embeddings derived from pre-trained deep neural networks with additional numerical features, specifically designed for the shared task. Ensembles of Logistic Regression classifiers and Support Vector Machines are used to derive predictions for each subtask via a majority voting scheme. Our best submission achieved macro-averaged F1-scores of 66.9%, 70.0% and 72.6% for the identification of toxic, engaging, and fact-claiming comments. Our contribution made first place on the engaging comment classification subtask <d-cite key="Risch2021"></d-cite>.
 
 ## Task and data description
 
@@ -71,7 +68,7 @@ If a platform provider has to prevent the spread of fake news and misinformation
 The general system architecture is shown in Fig.~\ref{fig:architecture}. As the number of samples in the training dataset provided for GermEval 2021 is rather small, our proposed framework focuses on suitable feature engineering with a conventional classification backend. These features and further implementation details of our system are described in the following.
 
 
-
+<!--
 **NOTE:**
 Citations, footnotes, and code blocks do not display correctly in the dark mode since distill does not support the dark mode by default.
 If you are interested in correctly adding dark mode support for distill, please open [a discussion](https://github.com/alshedivat/al-folio/discussions) and let us know.

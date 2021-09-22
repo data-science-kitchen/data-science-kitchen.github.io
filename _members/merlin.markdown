@@ -15,4 +15,4 @@ bibliography_file:
 bibliography_years: [2021]
 ---
 
-Merlin holds a M. Sc. and B. Sc. in IT-Security from <a href="https://etit.ruhr-uni-bochum.de/" target="_blank">Ruhr University Bochum</a>. He is currently in the final phase of his PhD project at the <a href="https://www.ini.rub.de/" target="_blank">INI</a>, where he worked on representation learning on high-dimensional time-series data using Slow Feature Analysis. His interests include approximate spectral graph-embeddings and dynamic Variational Auto-Encoders.	
+Merlin holds a M. Sc. and B. Sc. in IT-Security from <a href="https://etit.ruhr-uni-bochum.de/" target="_blank">Ruhr-University Bochum</a>. He is currently in the final phase of his PhD project at the <a href="https://www.ini.rub.de/" target="_blank">Intitute for Neural Computation</a>, where he worked on representation learning on high-dimensional time-series data using Slow Feature Analysis. His interests include approximate spectral graph-embeddings and dynamic Variational Auto-Encoders.	

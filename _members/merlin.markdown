@@ -9,7 +9,7 @@ github_username: mrschue
 scholar_userid: Z9Mm9E4AAAAJ
 research_gate_profile:
 orcid_id:
-img: merlin.png
+img: merlin-bw.png
 importance: 1
 bibliography_file:
 bibliography_years: [2021]

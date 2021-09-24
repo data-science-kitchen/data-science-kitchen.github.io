@@ -138,7 +138,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   jekyll
@@ -154,4 +154,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.2.22
+   2.1.4

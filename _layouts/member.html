@@ -23,6 +23,9 @@ layout: default
       {% if page.email %}
         <a href="mailto:{{ page.email }}"><i class="fa fa-envelope-square"></i></a>
       {% endif %}
+      {% if page.homepage %}
+        <a href="https://{{ page.homepage }}" target="_blank" title="Homepage"><i class="fas fa-external-link-square-alt"></i></a>
+      {% endif %}
       {% if page.twitter_username %}
         <a href="https://twitter.com/{{ page.twitter_username }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
       {% endif %}

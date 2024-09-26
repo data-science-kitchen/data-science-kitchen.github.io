@@ -15,5 +15,5 @@ bibliography_file: dennis.bib
 bibliography_years: [2021, 2020, 2019, 2018, 2017]
 ---
 
-tbd
+Highly skilled Data Scientist and Machine Learning Engineer with a PhD in Electrical Engineering and Information Technology, specializing in the development and deployment of advanced algorithms for automotive applications. Extensive experience in leading data-driven projects across diverse industries, from automated driving functions at ZF Automotive to leveraging AI for competitive intelligence at Evonik. 
 	

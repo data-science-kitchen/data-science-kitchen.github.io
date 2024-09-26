@@ -1,0 +1,227 @@
+---
+---
+
+@INPROCEEDINGS{DSK2021a,
+	abbr		= {KONVENS},
+	author	= {Niclas Hildebrandt and Benedikt Bönninghoff and Dennis Orth and Christopher Schymura},
+	booktitle	= {Konferenz zur Verarbeitung natürlicher Sprache/Conference on Natural Language Processing (KONVENS)},
+	publisher = {German Society for Computational Linguistics & Language Technology},
+	title	= {Data Science Kitchen at GermEval 2021: A Fine Selection of Hand-Picked Features, Delivered Fresh from the Oven},
+	year		= {2021},
+	abstract	= {This paper presents the contribution of the Data Science Kitchen at GermEval 2021 shared task on the identification of toxic, engaging, and fact-claiming comments. The task aims at extending the identification of offensive language, by including additional subtasks that identify comments which should be prioritized for fact-checking by moderators and community managers. Our contribution focuses on a feature-engineering approach with a conventional classification backend. We combine semantic and writing style embeddings derived from pre-trained deep neural networks with additional numerical features, specifically designed for this task. Ensembles of Logistic Regression classifiers and Support Vector Machines are used to derive predictions for each subtask via a majority voting scheme. Our best submission achieved macro-averaged F1-scores of 66.8%, 69.9% and 72.5% for the identification of toxic, engaging, and fact-claiming comments.},
+	pdf		= {https://netlibrary.aau.at/obvukloa/content/pageview/6435304}
+}
+
+@INPROCEEDINGS{Schymura2020Book,
+	abbr		= {BOOK CHAPTER},
+	author    	= {Christopher Schymura and Dorothea Kolossa},
+	title     	= {Blackboard Systems for Cognitive Audition},
+	booktitle	= {The Technology of Binaural Understanding},
+	year      	= {2020},
+	pdf       	= {https://link.springer.com/chapter/10.1007/978-3-030-00386-9_4},
+	doi			= {10.1007/978-3-030-00386-9_4},
+	abstract  	= {An essential part of auditory scene understanding is building an internal model of the world surrounding the listener. This internal representation can be mimicked computationally via a blackboard-system-based software architecture. Blackboard systems allow efficient integration of different perceptual modalities, algorithms, and data representations into a coherent and flexible computational framework. The term “blackboard” in this context stands for a flexible and compositional internal data representation, allowing individual software modules to access and process available information. This modular architecture also makes the system adaptable to different application scenarios and provides interfaces to incorporate feedback paths, which allows the system to derive task-optimal active behavior from the internal model. Extending conventional blackboard systems with modern machine-learning techniques, specifically probabilistic modeling and neural networks, enables the system to incorporate learning strategies into this computational framework. Additionally, online learning and adaptation strategies can be integrated into the data representation within the blackboard. This is particularly useful for developing feedback approaches. This chapter gives a review of existing blackboard systems for different applications and provides the necessary theoretical foundations. Subsequently, novel extensions that were recently introduced in the context of binaural scene analysis and understanding are presented and discussed. A special focus is set on possibilities for incorporating feedback and learning strategies into the framework.}
+}
+
+@INPROCEEDINGS{Schymura2021,
+	abbr		= {INTERSPEECH},
+	author	= {Christopher Schymura and Benedikt Bönninghoff and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Dorothea Kolossa},
+	booktitle	= {Annual Conference of the International Speech Communication Association (INTERSPEECH)},
+	title	= {PILOT: Introducing Transformers for Probabilistic Sound Event Localization},
+	year		= {2021},
+	arxiv	= {2106.03903},
+	abstract	= {Sound event localization aims at estimating the positions of sound sources in the environment with respect to an acoustic receiver (e.g. a microphone array). Recent advances in this domain most prominently focused on utilizing deep recurrent neural networks. Inspired by the success of transformer architectures as a suitable alternative to classical recurrent neural networks, this paper introduces a novel transformer-based sound event localization framework, where temporal dependencies in the received multi-channel audio signals are captured via self-attention mechanisms. Additionally, the estimated sound event positions are represented as multivariate Gaussian variables, yielding an additional notion of uncertainty, which many previously proposed deep learning-based systems designed for this application do not provide. The framework is evaluated on three publicly available multi-source sound event localization datasets and compared against state-of-the-art methods in terms of localization error and event detection accuracy. It outperforms all competing systems on all datasets with statistical significant differences in performance.}
+}
+
+@INPROCEEDINGS{Wissing2021,
+	abbr		= {ICASSP},
+	author	= {Julio Wissing and Benedikt Bönninghoff and Dorothea Kolossa and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Christopher Schymura},
+	booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+	title	= {Data Fusion for Audiovisual Speaker Localization: Extending Dynamic Stream Weights to the Spatial Domain},
+	year		= {2021},
+	arxiv	= {2102.11588},
+	code	= {https://github.com/rub-ksv/spatial-stream-weights},
+    pdf		= {https://ieeexplore.ieee.org/document/9413399},
+	abstract	= {Estimating the positions of multiple speakers can be helpful for tasks like automatic speech recognition or speaker diarization. Both applications benefit from a known speaker position when, for instance, applying beamforming or assigning unique speaker identities. Recently, several approaches utilizing acoustic signals augmented with visual data have been proposed for this task. However, both the acoustic and the visual modality may be corrupted in specific spatial regions, for instance due to poor lighting conditions or to the presence of background noise. This paper proposes a novel audiovisual data fusion framework for speaker localization by assigning individual dynamic stream weights to specific regions in the localization space. This fusion is achieved via a neural network, which combines the predictions of individual audio and video trackers based on their time- and location-dependent reliability. A performance evaluation using audiovisual recordings yields promising results, with the proposed fusion approach outperforming all baseline models.}
+}
+
+@INPROCEEDINGS{Schymura2020c,
+  abbr		= {EUSIPCO},
+  author	= {Christopher Schymura and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Dorothea Kolossa},  
+  booktitle	= {European Signal Processing Conference (EUSIPCO)},   
+  title	= {Exploiting Attention-based Sequence-to-Sequence Architectures for Sound Event Localization},   
+  year		= {2020},  
+  pages		= {231-235},  
+  doi		= {10.23919/Eusipco47968.2020.9287224},
+  pdf		= {https://ieeexplore.ieee.org/document/9287224},
+  arxiv		= {2103.00417},
+  code		= {https://github.com/chrschy/adrenaline},
+  abstract	= {Sound event localization frameworks based on deep neural networks have shown increased robustness with respect to reverberation and noise in comparison to classical parametric approaches. In particular, recurrent architectures that incorporate temporal context into the estimation process seem to be well-suited for this task. This paper proposes a novel approach to sound event localization by utilizing an attention-based sequence-to-sequence model. These types of models have been successfully applied to problems in natural language processing and automatic speech recognition. In this work, a multi-channel audio signal is encoded to a latent representation, which is subsequently decoded to a sequence of estimated directions-of-arrival. Herein, attentions allow for capturing temporal dependencies in the audio signal by focusing on specific frames that are relevant for estimating the activity and direction-of-arrival of sound events at the current time-step. The framework is evaluated on three publicly available datasets for sound event localization. It yields superior localization performance compared to state-of-the-art methods in both anechoic and reverberant conditions.}
+}
+
+@INPROCEEDINGS{Freiwald2020,
+  abbr		= {IJCNN},
+  author	= {Jan Freiwald and Lea Schönherr and Christopher Schymura and Steffen Zeiler and Dorothea Kolossa},  
+  booktitle	= {International Joint Conference on Neural Networks (IJCNN)},
+  title	= {Loss Functions for Deep Monaural Speech Enhancement},
+  year		= {2020},
+  pages	= {1-7},
+  doi		= {10.1109/IJCNN48605.2020.9207184},
+  pdf		= {http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21276.pdf},
+  abstract	= {Deep neural networks have proven highly effective at speech enhancement, which makes them attractive not just as front-ends for machine listening and speech recognition, but also as enhancement models for the benefit of human listeners. They are, however, usually being trained on loss functions that only assess quality in terms of a minimum mean squared error. This is neglecting the fact that human audio perception functions in a manner far better described by logarithmic measures than linear ones, that psychoacoustic hearing thresholds limit the perceptibility of many signal components in a mixture, and that a degree of continuity of signals may also be expected. Hence, sudden changes in the gain of a system may be detrimental. In the following, we cast these properties of human perception into a form that can aid the optimization of a deep neural network speech enhancement system. We explore their effects on a range of model topologies, showing the efficacy of the proposed modifications.}
+}
+
+@INPROCEEDINGS{Schymura2020b,
+  abbr		= {ICASSP},
+  author	= {Christopher Schymura and Tsubasa Ochiai and Marc Delcroix and Keisuke Kinoshita and Tomohiro Nakatani and Shoko Araki and Dorothea Kolossa},
+  booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title	= {A Dynamic Stream Weight Backprop Kalman Filter for Audiovisual Speaker Tracking},
+  year		= {2020},
+  pages	= {581-585},
+  doi		= {10.1109/ICASSP40776.2020.9054005},
+  pdf		= {https://ieeexplore.ieee.org/document/9054005},
+  abstract	= {Audiovisual speaker tracking is an application that has been tackled by a wide range of classical approaches based on Gaussian filters, most notably the well-known Kalman filter. Recently, a specific Kalman filter implementation was proposed for this task, which incorporated dynamic stream weights to explicitly control the influence of acoustic and visual observations during estimation. Inspired by recent progress in the context of integrating uncertainty estimates into modern deep learning frameworks, this paper proposes a deep neural-network-based implementation of the Kalman filter with dynamic stream weights, whose parameters can be learned via standard backpropagation. This allows for jointly optimizing the parameters of the model and the dynamic stream weight estimator in a unified framework. An experimental study on audiovisual speaker tracking shows that the proposed model shows comparable performance to state-of-the-art recurrent neural networks with the additional advantage of requiring a smaller number of parameters and providing explicit uncertainty information.}
+}
+
+@ARTICLE{Schymura2020a,
+  abbr		= {TASLP},
+  author    	= {Christopher Schymura and Dorothea Kolossa},
+  title     	= {Audiovisual Speaker Tracking using Nonlinear Dynamical Systems with Dynamic Stream Weights},
+  journal	= {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume	= {28},
+  pages	= {1065-1078},
+  arxiv			= {1903.06031},
+  year      	= {2020},
+  pdf       	= {https://ieeexplore.ieee.org/document/9037104},
+  doi		= {10.1109/TASLP.2020.2980974},
+  abstract  	= {Data fusion plays an important role in many technical applications that require efficient processing of multimodal sensory observations. A prominent example is audiovisual signal processing, which has gained increasing attention in automatic speech recognition, speaker localization and related tasks. If appropriately combined with acoustic information, additional visual cues can help to improve the performance in these applications, especially under adverse acoustic conditions. A dynamic weighting of acoustic and visual streams based on instantaneous sensor reliability measures is an efficient approach to data fusion in this context. This article presents a framework that extends the well-established theory of nonlinear dynamical systems with the notion of dynamic stream weights for an arbitrary number of sensory observations. It comprises a recursive state estimator based on the Gaussian filtering paradigm, which incorporates dynamic stream weights into a framework closely related to the extended Kalman filter. Additionally, a convex optimization approach to estimate oracle dynamic stream weights in fully observed dynamical systems utilizing a Dirichlet prior is presented. This serves as a basis for a generic parameter learning framework of dynamic stream weight estimators. The proposed system is application-independent and can be easily adapted to specific tasks and requirements. A study using audiovisual speaker tracking tasks is considered as an exemplary application in this work. An improved tracking performance of the dynamic stream-weight-based estimation framework over state-of-the-art methods is demonstrated in the experiments.}
+}
+
+@ARTICLE{Trowitzsch2020,
+  abbr		= {TASLP},
+  author	= {Ivo Trowitzsch and Christopher Schymura and Dorothea Kolossa and Klaus Obermayer},
+  journal	= {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  title	= {Joining Sound Event Detection and Localization Through Spatial Segregation},
+  year		= {2020},
+  volume	= {28},
+  pages	= {487-502},
+  arxiv		= {1904.00055},
+  doi		= {10.1109/TASLP.2019.2958408},
+  pdf       	= {https://ieeexplore.ieee.org/document/8928942},
+  abstract	= {Identification and localization of sounds are both integral parts of computational auditory scene analysis. Although each can be solved separately, the goal of forming coherent auditory objects and achieving a comprehensive spatial scene understanding suggests pursuing a joint solution of the two problems. This article presents an approach that robustly binds localization with the detection of sound events in a binaural robotic system. Both tasks are joined through the use of spatial stream segregation which produces probabilistic time-frequency masks for individual sources attributable to separate locations, enabling segregated sound event detection operating on these streams. We use simulations of a comprehensive suite of test scenes with multiple co-occurring sound sources, and propose performance measures for systematic investigation of the impact of scene complexity on this segregated detection of sound types. Analyzing the effect of spatial scene arrangement, we show how a robot could facilitate high performance through optimal head rotation. Furthermore, we investigate the performance of segregated detection given possible localization error as well as error in the estimation of number of active sources. Our analysis demonstrates that the proposed approach is an effective method to obtain joint sound event location and type information under a wide range of conditions.}
+}
+
+@INPROCEEDINGS{Schymura2019,
+  abbr		= {ICASSP},
+  author	= {Christopher Schymura and Dorothea Kolossa},
+  booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title	= {Learning Dynamic Stream Weights for Linear Dynamical Systems Using Natural Evolution Strategies},
+  year		= {2019},
+  pages	= {7893-7897},
+  doi		= {10.1109/ICASSP.2019.8682249},
+  pdf		= {https://ieeexplore.ieee.org/document/8682249},
+  abstract	= {Multimodal data fusion is an important aspect of many object localization and tracking frameworks that rely on sensory observations from different sources. A prominent example is audiovisual speaker localization, where the incorporation of visual information has shown to benefit overall performance, especially in adverse acoustic conditions. Recently, the notion of dynamic stream weights as an efficient data fusion technique has been introduced into this field. Originally proposed in the context of audiovisual automatic speech recognition, dynamic stream weights allow for effective sensory-level data fusion on a per-frame basis, if reliability measures for the individual sensory streams are available. This study proposes a learning framework for dynamic stream weights based on natural evolution strategies, which does not require the explicit computation of oracle information. An experimental evaluation based on recorded audiovisual sequences shows that the proposed approach outperforms conventional methods based on supervised training in terms of localization performance.}
+}
+
+@INPROCEEDINGS{Ito2018,
+  abbr		= {EUSIPCO},
+  author	= {Nobutaka Ito and Christopher Schymura and Shoko Araki and Tomohiro Nakatani},
+  booktitle	= {European Signal Processing Conference (EUSIPCO)},
+  title	= {Noisy cGMM: Complex Gaussian Mixture Model with Non-Sparse Noise Model for Joint Source Separation and Denoising},
+  year		= {2018},
+  pages	= {1662-1666},
+  doi		= {10.23919/EUSIPCO.2018.8553410},
+  pdf		= {https://ieeexplore.ieee.org/document/8553410},
+  abstract	= {Here we introduce a noisy cGMM, a probabilistic model for noisy, mixed signals observed by a microphone array for joint source separation and denoising. In a conventional time-varying complex Gaussian mixture model (cGMM), the observed signals are assumed to be composed of sparse target signals only, where the sparseness refers to the property of having significant power at only a few time-frequency points. However, this assumption becomes inaccurate in the presence of non-sparse signals such as background noise, which renders speech enhancement based on the cGMM less effective. In contrast, the proposed noisy cGMM is based on the assumption that the observed signals consist of not only sparse target signals but also non-sparse background noise. This enables the noisy cGMM to model the observed signals accurately even in the presence of non-sparse background noise, which leads to effective speech enhancement. We also propose a joint diagonalization-based algorithm for estimating the model parameters of the noisy cGMM, which is significantly faster than the standard EM algorithm without any performance degradation. Indeed, the joint diagonalization bypasses the need for matrix inversion, matrix multiplication, and determinant computation at each time-frequency point, which are needed in the EM algorithm. In an experiment, the noisy cGMM outperformed the cGMM in joint source separation and denoising.}
+}
+
+@INPROCEEDINGS{Schymura2018c,
+  abbr		= {IWAENC},
+  author	= {Christopher Schymura and Tobias Isenberg and Dorothea Kolossa},
+  booktitle	= {International Workshop on Acoustic Signal Enhancement (IWAENC)},
+  title	= {Extending Linear Dynamical Systems with Dynamic Stream Weights for Audiovisual Speaker Localization},
+  year		= {2018},
+  pages	= {515-519},
+  doi		= {10.1109/IWAENC.2018.8521384},
+  pdf		= {https://ieeexplore.ieee.org/document/8521384},
+  abstract	= {An important aspect of audiovisual speaker localization is the appropriate fusion of acoustic and visual observations based on their time-varying reliability. In this study, a framework which incorporates dynamic stream weights into the well-known Kalman filtering framework is proposed to cope with this challenge. The concept of dynamic stream weights has recently been investigated in the context of audiovisual automatic speech recognition, where it was successfully applied to weight audiovisual observations according to their reliability. This study extends that approach to linear dynamical systems and additionally introduces a closed-form solution to compute oracle dynamic stream weights from observation sequences with known state trajectories. The proposed approach is evaluated on audiovisual recordings from a humanoid robot in reverberant environments. The results indicate that incorporating dynamic stream weights allows for efficient data fusion on a per-frame basis, which shows superior performance over conventional Kalman-filter-based state estimation.}
+}
+
+@INPROCEEDINGS{Schymura2018b,
+  abbr		= {LVA/ICA},
+  author	= {Christopher Schymura and Peng Guo and Yanir Maymon and Boaz Rafaely and Dorothea Kolossa},
+  title	= {Exploiting Structures of Temporal Causality for Robust Speaker Localization in Reverberant Environments},
+  booktitle 	= {Latent Variable Analysis and Signal Separation (LVA/ICA)},
+  year		= {2018},
+  publisher	= {Springer International Publishing},
+  pages	= {228--237},
+  isbn		= {978-3-319-93764-9},
+  month	= {June},
+  pdf		= {https://link.springer.com/chapter/10.1007/978-3-319-93764-9_22},
+  abstract	= {This paper introduces a framework for robust speaker localization in reverberant environments based on a causal analysis of the temporal relationship between direct sound and corresponding reflections. It extends previously proposed localization approaches for spherical microphone arrays based on a direct-path dominance test. So far, these methods are applied in the time-frequency domain without considering the temporal context of direction-of-arrival measurements. In this work, a causal analysis of the temporal structure of subsequent directions-of-arrival estimates based on the Granger causality test is proposed. The cause-effect relationship between estimated directions is modeled via a causal graph, which is used to distinguish the direction of the direct sound from corresponding reflections. An experimental evaluation in simulated acoustic environments shows that the proposed approach yields an improvement in localization performance especially in highly reverberant conditions.}
+}
+
+@INPROCEEDINGS{Schymura2018a,
+  abbr		= {ICASSP},
+  author	= {Christopher Schymura and Dorothea Kolossa},
+  booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title	= {Potential-Field-Based Active Exploration for Acoustic Simultaneous Localization and Mapping},
+  year		= {2018},
+  pages	= {76-80},
+  doi		= {10.1109/ICASSP.2018.8461655},
+  pdf		= {https://ieeexplore.ieee.org/document/8461655},
+  abstract	= {This paper presents a novel framework for active exploration in the context of acoustic simultaneous localization and mapping (SLAM) using a microphone array mounted on a mobile robotic agent. Acoustic SLAM aims at building a map of acoustic sources present in the environment and simultaneously estimating the agent's own trajectory and position within this map. Two important aspects of this task are robustness against disturbances arising from reverberation and sensor imperfections and an appropriate degree of exploration to achieve high map accuracy. Several approaches to the latter aspect using information-theoretic measures have recently been proposed. This study extends these approaches into a framework based on the potential field method, which is a widely used technique for robotic path planning and navigation. It allows to determine exploratory movement trajectories for the robotic agent via gradient descent, without requiring computationally expensive Monte Carlo simulations to predict the effects of specific trajectory choices. Furthermore, additional constraints like maintaining a safe distance to acoustic sources can easily be integrated into this framework. Experimental evaluation demonstrates that the proposed method yields adequate exploration strategies of the acoustic environment leading to accurate map estimates.}
+}
+
+@INPROCEEDINGS{Meutzner0217,
+  abbr		= {ICASSP},
+  author	= {Hendrik Meutzner and Ning Ma and Robert Nickel and Christopher Schymura and Dorothea Kolossa},
+  booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title	= {Improving Audio-Visual Speech Recognition using Deep Neural Networks with Dynamic Stream Reliability Estimates},
+  year		= {2017},
+  pages	= {5320-5324},
+  doi		= {10.1109/ICASSP.2017.7953172},
+  pdf		= {https://ieeexplore.ieee.org/document/7953172},
+  abstract	= {Audio-visual speech recognition is a promising approach to tackling the problem of reduced recognition rates under adverse acoustic conditions. However, finding an optimal mechanism for combining multi-modal information remains a challenging task. Various methods are applicable for integrating acoustic and visual information in Gaussian-mixture-model-based speech recognition, e.g., via dynamic stream weighting. The recent advances of deep neural network (DNN)-based speech recognition promise improved performance when using audio-visual information. However, the question of how to optimally integrate acoustic and visual information remains. In this paper, we propose a state-based integration scheme that uses dynamic stream weights in DNN-based audio-visual speech recognition. The dynamic weights are obtained from a time-variant reliability estimate that is derived from the audio signal. We show that this state-based integration is superior to early integration of multi-modal features, even if early integration also includes the proposed reliability estimate. Furthermore, the proposed adaptive mechanism is able to outperform a fixed weighting approach that exploits oracle knowledge of the true signal-to-noise ratio.}
+}
+
+@INPROCEEDINGS{Schymura2017,
+  abbr		= {ICASSP},
+  author	= {Christopher Schymura and Juan Diego Rios Grajales and Dorothea Kolossa},
+  booktitle	= {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title	= {Monte Carlo Exploration for Active Binaural Localization},
+  year		= {2017},
+  pages	= {491-495},
+  doi		= {10.1109/ICASSP.2017.7952204},
+  pdf		= {https://ieeexplore.ieee.org/document/7952204},
+  abstract	= {This study introduces a machine hearing system for robot audition, which enables a robotic agent to pro-actively minimize the uncertainty of sound source location estimates through motion. The proposed system is based on an active exploration approach, providing a means to model and predict effects of the agent's future motions on localization uncertainty in a probabilistic manner. Particle filtering is used to estimate the posterior probability density function of the source position from binaural measurements, enabling to jointly assess azimuth and distance of the source. The framework allows to infer and refine a policy to select appropriate actions via a Monte Carlo exploration approach. Experiments in simulated reverberant conditions are conducted, showing that active exploration and the incorporation of distance estimation significantly improve localization performance.}
+}
+
+@INPROCEEDINGS{Schymura2016,
+	author 			= {Christopher Schymura and Juan Diego Rios Grajales and Dorothea Kolossa},
+	booktitle 		= {Deutsche Jahrestagung für Akustik (DAGA)},
+	title 			= {Active Localization of Sound Sources with Binaural Models},
+	month 			= {March},
+	year 			= {2016},
+	abstract		= {During past decades, a variety of different models for sound source localization has been developed in the context of binaural hearing. This paper introduces extensions to recently developed models, which consider localization as an active process, inspired by the ability of humans to conduct head movements. A machine hearing system is presented that utilizes different head motion strategies via a closed-loop feedback control scheme to localize sources at any angular position in the horizontal plane. The proposed framework is based on representing the localization problem as a dynamical system, where the source position is inferred from interaural time- and level-difference measurements by recursive Bayesian estimation techniques. This approach enables the system to be used for online processing on a frame-by-frame basis and to adapt accordingly to changes in a dynamic acoustic scene. A systematic evaluation of different head movement strategies shows that closed-loop feedback is able to substantially increase localization performance in different acoustic conditions.}
+}
+
+@INPROCEEDINGS{Schymura2015,
+  abbr		= {INTERSPEECH},
+  author	= {Christopher Schymura and Fiete Winter and Dorothea Kolossa and Sascha Spors},
+  booktitle	= {Annual Conference of the International Speech Communication Association (INTERSPEECH)},
+  title	= {Binaural Sound Source Localisation and Tracking Using a Dynamic Spherical Head Model},
+  year		= {2015},
+  pages	= {165--169},
+  pdf		= {https://www.int.uni-rostock.de/fileadmin/user_upload/publications/spors/2015/Schymura_et_al_EURONOISE_Binaural_Localization.pdf},
+  abstract	= {This paper introduces a binaural model for the localisation and tracking of a moving sound source’s azimuth in the horizontal plane. The model uses a nonlinear state space representation of the sound source dynamics including the current position of the listener’s head. The state is estimated via an unscented Kalman Filter by comparing the interaural level and time differences of the binaural signal with semi-analytically derived localisation cues from a spherical head model. The localisation performance of the model is evaluated in combination with two different head movement approaches based on open-and closed-loop control strategies. The results show that adaptive strategies outperform non-adaptive ones and are able to compensate systematic deviations between the spherical head model and human heads.}
+}
+
+@INPROCEEDINGS{Schymura2014,
+	author 			= {Christopher Schymura and Ning Ma and Guy J. Brown and Thomas Walther and Dorothea Kolossa},
+	booktitle 		= {Forum Acusticum},
+	title 			= {Binaural Sound Source Localisation using a Bayesian-network-based Blackboard System and Hypothesis-driven Feedback},
+	month 			= {September},
+	year 			= {2014},
+	abstract		= {An essential aspect of Auditory Scene Analysis is the localisation of sound sources in relation to the position of the listener in the surrounding environment. The human auditory system is capable of precisely locating and separating different sound sources, even in noisy and reverberant environments, whereas mimicking this ability by computational means is still a challenging task. In this work, we investigate a Bayesian-network-based approach in the context of binaural sound source localisation. We extend existing solutions towards a Bayesian network based blackboard system that includes expert knowledge inspired by insights into the human auditory system. In order to improve estimation of source positions and reduce uncertainty caused by front-back ambiguities, hypothesis-driven feedback is used. This is accomplished by triggering head movements based on inference results provided by the Bayesian network. We evaluate the performance of our approach in comparison to existing solutions in a sound-source localisation task within a virtual acoustic environment.}
+}

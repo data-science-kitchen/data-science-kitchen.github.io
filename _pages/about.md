@@ -1,50 +1,29 @@
 ---
 layout: page
-permalink: /
-title:
-nav:
-news: true  # includes a list of news items
+title: About
+permalink: /about/
 ---
 
-<div class="text-center mt-5">
-  <img class="img-fluid" src="{{ 'dsk-logo.png' | prepend: '/assets/img/' | prepend: site.baseurl }}">
-</div>
+[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
 
-<div class="col mt-4">
-  <h3 class="title text-center font-weight-bold">Machine learning, delivered fresh from the oven</h3>
-</div>
+This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
 
-<div class="col mt-4">
-  <h3 class="title text-center font-weight-bold"></h3>
-</div>
+## Features
 
-<div class="col text-justify p-0">
-We are a group of data science and machine learning professionals, doing open source research for fun in our free time. Founded in November 2020, our objective is to publish interesting machine learning research, learn from each other and continuously develop our data science skillset. We particularly enjoy participating in machine learning challenges and competitions. Our research interests primarily focus on natural language processing and explainable machine learning, but we do not limit ourselves to these subject areas and are generally open to ideas from a broad range of application domains.
-<br/><br/>
-</div>
+- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
+- Fully responsive and mobile optimized base theme
+- Sass/Coffeescript support using Jekyll 2.0
+- Free hosting on your GitHub Pages user site
+- All the SEO goodies comes in-built
+- Markdown blogging
+- Syntax highlighting using Pygments
+    - [Dracula syntax theme](https://draculatheme.com/) included
+- Disqus commenting
+- Google Analytics integration
+- Fuzzy search across blog posts
+- Pagination of posts works out-of-the-box.
+- Categorize posts out-of-the box
+- RSS Feed
+- In-built sitemap
 
-<div class="news">
-  <h2>news</h2>
-  {% if site.news  %}
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-      {% assign news = site.news | reverse %}
-      {% for item in news limit: site.news_limit %}
-        <tr>
-          <th scope="row" style="width: 100px;">{{ item.date | date: "%b %-d, %Y" }}</th>
-          <td>
-            {% if item.inline %}
-              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-            {% else %}
-              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-      </table>
-    </div>
-  {% else %}
-    <p>No news so far...</p>
-  {% endif %}
-</div>
-
+Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
